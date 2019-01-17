@@ -1,0 +1,6 @@
+<input type="search" [formControl]="searchControl">
+
+<div *ngFor="let repository of repositories$ | async">
+  <h1>{{ repository.name }}</h1>
+  Stars: {{ repository.stargazers_count }}
+</div>
